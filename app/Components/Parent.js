@@ -68,7 +68,7 @@ var Parent = React.createClass({
 
 			<div className="container">
 					<div className="jumbotron">
-						<h3>COMMON VITAL WEBSITES AND LINKS TEST</h3>
+						<h3>COMMON VITAL WEBSITES AND LINKS</h3>
 						<hr/>
 						{/*<p><em>Now backed by the power of MongoDB!</em> Just visit <a href="/api">/api</a> to check out the DB!</p>*/}
 						{/*<p>*/}

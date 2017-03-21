@@ -19831,7 +19831,7 @@
 					React.createElement(
 						'h3',
 						null,
-						'COMMON VITAL WEBSITES AND LINKS TEST'
+						'COMMON VITAL WEBSITES AND LINKS'
 					),
 					React.createElement('hr', null)
 				),
