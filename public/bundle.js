@@ -19827,10 +19827,10 @@
 				{ className: 'container' },
 				React.createElement(
 					'div',
-					{ className: 'jumbotron' },
+					{ className: 'jumbotron', style: { background: 'lightblue' } },
 					React.createElement(
 						'h3',
-						null,
+						{ style: { fontSize: '50px' } },
 						'COMMON VITAL WEBSITES AND LINKS'
 					),
 					React.createElement('hr', null)

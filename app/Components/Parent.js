@@ -67,8 +67,8 @@ var Parent = React.createClass({
 		return(
 
 			<div className="container">
-					<div className="jumbotron" >
-						<h3>COMMON VITAL WEBSITES AND LINKS</h3>
+					<div className="jumbotron" style={{background: 'lightblue'}}>
+						<h3 style={{fontSize: '50px'}}>COMMON VITAL WEBSITES AND LINKS</h3>
 						<hr/>
 						{/*<p><em>Now backed by the power of MongoDB!</em> Just visit <a href="/api">/api</a> to check out the DB!</p>*/}
 						{/*<p>*/}
