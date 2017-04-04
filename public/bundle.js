@@ -19833,7 +19833,42 @@
 						{ style: { fontSize: '50px' } },
 						'COMMON VITAL WEBSITES AND LINKS'
 					),
-					React.createElement('hr', null)
+					React.createElement('hr', null),
+					React.createElement(
+						'p',
+						null,
+						React.createElement(
+							'em',
+							null,
+							'Now backed by the power of MongoDB!'
+						),
+						' Just visit ',
+						React.createElement(
+							'a',
+							{ href: '/api' },
+							'/api'
+						),
+						' to check out the DB!'
+					),
+					React.createElement(
+						'p',
+						null,
+						React.createElement(
+							'a',
+							{ className: 'btn btn-primary btn-lg', type: 'button', onClick: this.handleClick },
+							'CLICK ME!!!!'
+						),
+						React.createElement(
+							'span',
+							null,
+							' '
+						),
+						React.createElement(
+							'a',
+							{ className: 'btn btn-danger btn-lg', type: 'button', onClick: this.resetClick },
+							'Reset'
+						)
+					)
 				),
 				React.createElement(
 					'div',
@@ -19849,7 +19884,7 @@
 								{ className: 'panel-heading' },
 								React.createElement(
 									'h3',
-									{ className: 'panel-title text-center' },
+									{ className: 'panel-title text-center', style: { fontSize: '30px' } },
 									'Websites'
 								)
 							),
@@ -19864,7 +19899,7 @@
 										{ className: 'panel-body text-left' },
 										React.createElement(
 											'div',
-											{ 'class': 'panel' },
+											{ className: 'panel' },
 											React.createElement(
 												'p',
 												null,
@@ -19872,10 +19907,10 @@
 											),
 											React.createElement(
 												'ol',
-												{ 'class': 'nav nav-pills nav-stacked' },
+												{ className: 'nav nav-pills nav-stacked' },
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://13.92.252.199:9090/HCRISWeb/login.jsp', target: '_blank' },
@@ -19884,7 +19919,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.costreportdata.com/worksheet_formats.html', target: '_blank' },
@@ -19893,7 +19928,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://hcris.hfssoft.com/iFrame/Login/iLogin.aspx', target: '_blank' },
@@ -19902,7 +19937,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://qualityreimburse.sugarondemand.com/index.php?action=Login&module=Users', target: '_blank' },
@@ -19911,7 +19946,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.mykplan.com/participantsecure_net/login.aspx', target: '_blank' },
@@ -19920,7 +19955,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.cbeyondonline.net/cbo/cbol/index.html', target: '_blank' },
@@ -19929,7 +19964,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://cp.fonality.com/', target: '_blank' },
@@ -19938,7 +19973,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.mykmbs.com/mykmbs/login.jspx', target: '_blank' },
@@ -19947,7 +19982,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.gotomeeting.com/', target: '_blank' },
@@ -19956,7 +19991,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://secure.qualityreimbursement.com/', target: '_blank' },
@@ -19965,7 +20000,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.qualityreimbursement.com/', target: '_blank' },
@@ -19974,7 +20009,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/CostReports/index.html', target: '_blank' },
@@ -19983,7 +20018,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/dsh.html', target: '_blank' },
@@ -19992,7 +20027,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.cms.gov/Research-Statistics-Data-and-Systems/Computer-Data-and-Systems/Privacy/DUA_-_DSH.html', target: '_blank' },
@@ -20001,7 +20036,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.ahd.com/', target: '_blank' },
@@ -20010,7 +20045,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://login.wolterskluwer.com/auth/?resume=/idp/GHoPx/resumeSAML20/idp/SSO.ping&PF_TargetResource=https%3A%2F%2Fintelliconnect.cch.com%3A443%2Fscion%2Fauth%2Fstep2&WK_CPID=WKUS-NA-IC&WK_Force_Login=STANDARD', target: '_blank' },
@@ -20019,7 +20054,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.regulations.gov/#!home', target: '_blank' },
@@ -20028,7 +20063,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.pacer.gov/', target: '_blank' },
@@ -20037,7 +20072,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://ra.emdeon.com/', target: '_blank' },
@@ -20046,7 +20081,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.govdataservices.com/', target: '_blank' },
@@ -20055,7 +20090,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.ups.com/uis/create?loc=en_US&WT.svl=PNRO_L1', target: '_blank' },
@@ -20064,7 +20099,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.fedex.com/us/', target: '_blank' },
@@ -20073,7 +20108,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://smb.att.com/olam/loginAction.olamexecute', target: '_blank' },
@@ -20082,7 +20117,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://login.luminate.com/login?.src=smbiz&.done=https%3A%2F%2Fwww.luminate.com%2Fservices%3F_ga%3D1.242949826.1137720605.1466816702%26authRedirect%3Dtrue&_ga=1.242949826.1137720605.1466816702', target: '_blank' },
@@ -20091,7 +20126,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.microsoft.com/Licensing/servicecenter/default.aspx', target: '_blank' },
@@ -20100,7 +20135,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.medi-cal.ca.gov/Eligibility/Login.asp', target: '_blank' },
@@ -20170,7 +20205,7 @@
 					{ className: 'panel-body text-left' },
 					React.createElement(
 						'div',
-						{ 'class': 'panel' },
+						{ className: 'panel' },
 						React.createElement(
 							'p',
 							null,
@@ -20178,10 +20213,10 @@
 						),
 						React.createElement(
 							'ol',
-							{ 'class': 'nav nav-pills nav-stacked' },
+							{ className: 'nav nav-pills nav-stacked' },
 							React.createElement(
 								'li',
-								{ role: 'presentation', 'class': 'active' },
+								{ role: 'presentation', className: 'active' },
 								React.createElement(
 									'a',
 									{ href: '#', target: '_blank' },
@@ -20190,7 +20225,7 @@
 							),
 							React.createElement(
 								'li',
-								{ role: 'presentation', 'class': 'active' },
+								{ role: 'presentation', className: 'active' },
 								React.createElement(
 									'a',
 									{ href: '#', target: '_blank' },
@@ -20199,7 +20234,7 @@
 							),
 							React.createElement(
 								'li',
-								{ role: 'presentation', 'class': 'active' },
+								{ role: 'presentation', className: 'active' },
 								React.createElement(
 									'a',
 									{ href: '#', target: '_blank' },
@@ -20208,7 +20243,7 @@
 							),
 							React.createElement(
 								'li',
-								{ role: 'presentation', 'class': 'active' },
+								{ role: 'presentation', className: 'active' },
 								React.createElement(
 									'a',
 									{ href: '#', target: '_blank' },
@@ -20217,7 +20252,7 @@
 							),
 							React.createElement(
 								'li',
-								{ role: 'presentation', 'class': 'active' },
+								{ role: 'presentation', className: 'active' },
 								React.createElement(
 									'a',
 									{ href: '#', target: '_blank' },
@@ -20226,7 +20261,7 @@
 							),
 							React.createElement(
 								'li',
-								{ role: 'presentation', 'class': 'active' },
+								{ role: 'presentation', className: 'active' },
 								React.createElement(
 									'a',
 									{ href: '#', target: '_blank' },
@@ -20235,7 +20270,7 @@
 							),
 							React.createElement(
 								'li',
-								{ role: 'presentation', 'class': 'active' },
+								{ role: 'presentation', className: 'active' },
 								React.createElement(
 									'a',
 									{ href: '#', target: '_blank' },
@@ -20243,7 +20278,13 @@
 								)
 							)
 						)
-					)
+					),
+					React.createElement(
+						'h1',
+						null,
+						this.state.number + 2 * this.props.clicks
+					),
+					React.createElement(GrandChild, { number: this.state.number + 2 * this.props.clicks })
 				)
 			);
 		}
@@ -20297,10 +20338,10 @@
 					),
 					React.createElement(
 						"ol",
-						{ "class": "nav nav-pills nav-stacked" },
+						{ className: "nav nav-pills nav-stacked" },
 						React.createElement(
 							"li",
-							{ role: "presentation", "class": "active" },
+							{ role: "presentation", className: "active" },
 							React.createElement(
 								"a",
 								{ href: "\\\\QRSNAS2\\Library\\00 Database Server Resources\\00 Database\\201.06.accdb" },
@@ -20309,7 +20350,7 @@
 						),
 						React.createElement(
 							"li",
-							{ role: "presentation", "class": "active" },
+							{ role: "presentation", className: "active" },
 							React.createElement(
 								"a",
 								{ href: "file://qrsnas2/Library/philip.accdb", target: "_blank" },
@@ -20318,7 +20359,7 @@
 						),
 						React.createElement(
 							"li",
-							{ role: "presentation", "class": "active" },
+							{ role: "presentation", className: "active" },
 							React.createElement(
 								"a",
 								{ href: "\\cvwl", target: "_blank" },
