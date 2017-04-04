@@ -3,7 +3,7 @@ var React = require('react');
 
 // Here we include all of the sub-components
 var Child = require('./Child');
-
+var Grandchild = require('./Grandchild');
 // Here we will utilize the axios library to perform GET/POST requests
 var axios = require('axios');
 
@@ -141,7 +141,7 @@ var Parent = React.createClass({
 					{/*This represents the "Parent"*/}
 					<div className="col-md-6">
 						{/*Here we'll deploy the child component. We'll pass it the parent's click counter as a "state"*/}
-						<Child clicks={this.state.clicks}/>
+						<Child clicks={this.state.clicks}/><Grandchild clicks={this.state.clicks}/>
 					</div>
 
 				</div>

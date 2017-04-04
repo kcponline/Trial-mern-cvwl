@@ -19761,7 +19761,7 @@
 
 	// Here we include all of the sub-components
 	var Child = __webpack_require__(160);
-
+	var Grandchild = __webpack_require__(181);
 	// Here we will utilize the axios library to perform GET/POST requests
 	var axios = __webpack_require__(162);
 
@@ -20152,7 +20152,8 @@
 					React.createElement(
 						'div',
 						{ className: 'col-md-6' },
-						React.createElement(Child, { clicks: this.state.clicks })
+						React.createElement(Child, { clicks: this.state.clicks }),
+						React.createElement(Grandchild, { clicks: this.state.clicks })
 					)
 				)
 			);
@@ -21586,6 +21587,88 @@
 	  };
 	};
 
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	// Include React 
+	var React = __webpack_require__(1);
+
+	// Create the GrandChild Component
+	var GrandChild = React.createClass({
+		displayName: "GrandChild",
+
+
+		// GrandChild has a state that follows the number of clicks
+		getInitialState: function getInitialState() {
+			return {
+				number: 0
+			};
+		},
+
+		render: function render() {
+
+			return React.createElement(
+				"div",
+				{ className: "panel panel-default" },
+				React.createElement(
+					"div",
+					{ className: "panel-heading" },
+					React.createElement(
+						"h3",
+						{ className: "panel-title text-center" },
+						"Databases"
+					)
+				),
+				React.createElement(
+					"div",
+					{ className: "panel-body text-left" },
+					React.createElement(
+						"p",
+						null,
+						"Updated 03/20/2017 1:19pm"
+					),
+					React.createElement(
+						"ol",
+						{ className: "nav nav-pills nav-stacked" },
+						React.createElement(
+							"li",
+							{ role: "presentation", className: "active" },
+							React.createElement(
+								"a",
+								{ href: "\\\\QRSNAS2\\Library\\00 Database Server Resources\\00 Database\\201.06.accdb" },
+								"PT (aka HCRIS or Project Tracking)"
+							)
+						),
+						React.createElement(
+							"li",
+							{ role: "presentation", className: "active" },
+							React.createElement(
+								"a",
+								{ href: "file://qrsnas2/Library/philip.accdb", target: "_blank" },
+								"PHILIP (fka Tracking or Philip's Tracking Database)"
+							)
+						),
+						React.createElement(
+							"li",
+							{ role: "presentation", className: "active" },
+							React.createElement(
+								"a",
+								{ href: "\\cvwl", target: "_blank" },
+								"SSI Chart (graph database)"
+							)
+						)
+					)
+				)
+			);
+		}
+	});
+
+	// Export the component back for use in other files
+	module.exports = GrandChild;
 
 /***/ }
 /******/ ]);
