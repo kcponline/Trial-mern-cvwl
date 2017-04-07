@@ -19761,9 +19761,9 @@
 
 	// Here we include all of the sub-components
 	var Child = __webpack_require__(160);
-	var Grandchild = __webpack_require__(181);
+
 	// Here we will utilize the axios library to perform GET/POST requests
-	var axios = __webpack_require__(162);
+	var axios = __webpack_require__(163);
 
 	// Create the Parent Component
 	var Parent = React.createClass({
@@ -20143,6 +20143,11 @@
 													)
 												)
 											)
+										),
+										React.createElement(
+											'h1',
+											null,
+											this.state.clicks
 										)
 									)
 								)
@@ -20152,8 +20157,7 @@
 					React.createElement(
 						'div',
 						{ className: 'col-md-6' },
-						React.createElement(Child, { clicks: this.state.clicks }),
-						React.createElement(Grandchild, { clicks: this.state.clicks })
+						React.createElement(Child, { clicks: this.state.clicks })
 					)
 				)
 			);
@@ -20315,6 +20319,7 @@
 			};
 		},
 
+		// notice the line spacing is formatted for code folding neatness.
 		render: function render() {
 
 			return React.createElement(
@@ -20345,7 +20350,7 @@
 							{ role: "presentation", className: "active" },
 							React.createElement(
 								"a",
-								{ href: "\\\\QRSNAS2\\Library\\00 Database Server Resources\\00 Database\\201.06.accdb" },
+								{ href: "./", download: "PT 1.06.accdb" },
 								"PT (aka HCRIS or Project Tracking)"
 							)
 						),
@@ -20354,7 +20359,7 @@
 							{ role: "presentation", className: "active" },
 							React.createElement(
 								"a",
-								{ href: "file://qrsnas2/Library/philip.accdb", target: "_blank" },
+								{ href: "./", download: "philip.accdb" },
 								"PHILIP (fka Tracking or Philip's Tracking Database)"
 							)
 						),
@@ -20363,39 +20368,46 @@
 							{ role: "presentation", className: "active" },
 							React.createElement(
 								"a",
-								{ href: "\\cvwl", target: "_blank" },
+								{ href: "./", download: "SSI 1.01.accdb" },
 								"SSI Chart (graph database)"
 							)
 						)
+					),
+					React.createElement(
+						"h1",
+						null,
+						this.state.number + 4 * this.props.number
 					)
 				)
 			);
 		}
+
 	});
 
 	// Export the component back for use in other files
 	module.exports = GrandChild;
 
 /***/ },
-/* 162 */
+/* 162 */,
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(163);
+	module.exports = __webpack_require__(164);
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var defaults = __webpack_require__(164);
-	var utils = __webpack_require__(165);
-	var dispatchRequest = __webpack_require__(167);
-	var InterceptorManager = __webpack_require__(176);
-	var isAbsoluteURL = __webpack_require__(177);
-	var combineURLs = __webpack_require__(178);
-	var bind = __webpack_require__(179);
-	var transformData = __webpack_require__(171);
+	var defaults = __webpack_require__(165);
+	var utils = __webpack_require__(166);
+	var dispatchRequest = __webpack_require__(168);
+	var InterceptorManager = __webpack_require__(177);
+	var isAbsoluteURL = __webpack_require__(178);
+	var combineURLs = __webpack_require__(179);
+	var bind = __webpack_require__(180);
+	var transformData = __webpack_require__(172);
 
 	function Axios(defaultConfig) {
 	  this.defaults = utils.merge({}, defaultConfig);
@@ -20484,7 +20496,7 @@
 	axios.all = function all(promises) {
 	  return Promise.all(promises);
 	};
-	axios.spread = __webpack_require__(180);
+	axios.spread = __webpack_require__(181);
 
 	// Provide aliases for supported request methods
 	utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
@@ -20512,13 +20524,13 @@
 
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(165);
-	var normalizeHeaderName = __webpack_require__(166);
+	var utils = __webpack_require__(166);
+	var normalizeHeaderName = __webpack_require__(167);
 
 	var PROTECTION_PREFIX = /^\)\]\}',?\n/;
 	var DEFAULT_CONTENT_TYPE = {
@@ -20590,7 +20602,7 @@
 
 
 /***/ },
-/* 165 */
+/* 166 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -20873,12 +20885,12 @@
 
 
 /***/ },
-/* 166 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(165);
+	var utils = __webpack_require__(166);
 
 	module.exports = function normalizeHeaderName(headers, normalizedName) {
 	  utils.forEach(headers, function processHeader(value, name) {
@@ -20891,7 +20903,7 @@
 
 
 /***/ },
-/* 167 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -20913,10 +20925,10 @@
 	        adapter = config.adapter;
 	      } else if (typeof XMLHttpRequest !== 'undefined') {
 	        // For browsers use XHR adapter
-	        adapter = __webpack_require__(168);
+	        adapter = __webpack_require__(169);
 	      } else if (typeof process !== 'undefined') {
 	        // For node use HTTP adapter
-	        adapter = __webpack_require__(168);
+	        adapter = __webpack_require__(169);
 	      }
 
 	      if (typeof adapter === 'function') {
@@ -20932,18 +20944,18 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 168 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
-	var utils = __webpack_require__(165);
-	var buildURL = __webpack_require__(169);
-	var parseHeaders = __webpack_require__(170);
-	var transformData = __webpack_require__(171);
-	var isURLSameOrigin = __webpack_require__(172);
-	var btoa = (typeof window !== 'undefined' && window.btoa) || __webpack_require__(173);
-	var settle = __webpack_require__(174);
+	var utils = __webpack_require__(166);
+	var buildURL = __webpack_require__(170);
+	var parseHeaders = __webpack_require__(171);
+	var transformData = __webpack_require__(172);
+	var isURLSameOrigin = __webpack_require__(173);
+	var btoa = (typeof window !== 'undefined' && window.btoa) || __webpack_require__(174);
+	var settle = __webpack_require__(175);
 
 	module.exports = function xhrAdapter(resolve, reject, config) {
 	  var requestData = config.data;
@@ -21040,7 +21052,7 @@
 	  // This is only done if running in a standard browser environment.
 	  // Specifically not if we're in a web worker, or react-native.
 	  if (utils.isStandardBrowserEnv()) {
-	    var cookies = __webpack_require__(175);
+	    var cookies = __webpack_require__(176);
 
 	    // Add xsrf header
 	    var xsrfValue = config.withCredentials || isURLSameOrigin(config.url) ?
@@ -21101,12 +21113,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(165);
+	var utils = __webpack_require__(166);
 
 	function encode(val) {
 	  return encodeURIComponent(val).
@@ -21175,12 +21187,12 @@
 
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(165);
+	var utils = __webpack_require__(166);
 
 	/**
 	 * Parse headers into an object
@@ -21218,12 +21230,12 @@
 
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(165);
+	var utils = __webpack_require__(166);
 
 	/**
 	 * Transform the data for a request or a response
@@ -21244,12 +21256,12 @@
 
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(165);
+	var utils = __webpack_require__(166);
 
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -21318,7 +21330,7 @@
 
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21360,7 +21372,7 @@
 
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21384,12 +21396,12 @@
 
 
 /***/ },
-/* 175 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(165);
+	var utils = __webpack_require__(166);
 
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -21443,12 +21455,12 @@
 
 
 /***/ },
-/* 176 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(165);
+	var utils = __webpack_require__(166);
 
 	function InterceptorManager() {
 	  this.handlers = [];
@@ -21501,7 +21513,7 @@
 
 
 /***/ },
-/* 177 */
+/* 178 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21521,7 +21533,7 @@
 
 
 /***/ },
-/* 178 */
+/* 179 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21539,7 +21551,7 @@
 
 
 /***/ },
-/* 179 */
+/* 180 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21556,7 +21568,7 @@
 
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21587,88 +21599,6 @@
 	  };
 	};
 
-
-/***/ },
-/* 181 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	// Include React 
-	var React = __webpack_require__(1);
-
-	// Create the GrandChild Component
-	var GrandChild = React.createClass({
-		displayName: "GrandChild",
-
-
-		// GrandChild has a state that follows the number of clicks
-		getInitialState: function getInitialState() {
-			return {
-				number: 0
-			};
-		},
-
-		render: function render() {
-
-			return React.createElement(
-				"div",
-				{ className: "panel panel-default" },
-				React.createElement(
-					"div",
-					{ className: "panel-heading" },
-					React.createElement(
-						"h3",
-						{ className: "panel-title text-center" },
-						"Databases"
-					)
-				),
-				React.createElement(
-					"div",
-					{ className: "panel-body text-left" },
-					React.createElement(
-						"p",
-						null,
-						"Updated 03/20/2017 1:19pm"
-					),
-					React.createElement(
-						"ol",
-						{ className: "nav nav-pills nav-stacked" },
-						React.createElement(
-							"li",
-							{ role: "presentation", className: "active" },
-							React.createElement(
-								"a",
-								{ href: "\\\\QRSNAS2\\Library\\00 Database Server Resources\\00 Database\\201.06.accdb" },
-								"PT (aka HCRIS or Project Tracking)"
-							)
-						),
-						React.createElement(
-							"li",
-							{ role: "presentation", className: "active" },
-							React.createElement(
-								"a",
-								{ href: "file://qrsnas2/Library/philip.accdb", target: "_blank" },
-								"PHILIP (fka Tracking or Philip's Tracking Database)"
-							)
-						),
-						React.createElement(
-							"li",
-							{ role: "presentation", className: "active" },
-							React.createElement(
-								"a",
-								{ href: "\\cvwl", target: "_blank" },
-								"SSI Chart (graph database)"
-							)
-						)
-					)
-				)
-			);
-		}
-	});
-
-	// Export the component back for use in other files
-	module.exports = GrandChild;
 
 /***/ }
 /******/ ]);
