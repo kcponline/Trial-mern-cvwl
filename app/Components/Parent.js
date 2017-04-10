@@ -4,6 +4,9 @@ var React = require('react');
 // Here we include all of the sub-components
 var Child = require('./Child');
 
+// Here we include all of the sub-components
+var Child2 = require('./Child2');
+
 // Here we will utilize the axios library to perform GET/POST requests
 var axios = require('axios');
 
@@ -14,20 +17,29 @@ var Parent = React.createClass({
 	getInitialState: function(){
 		return {
 			clicks: 0,
-			clickID: "Main"
+			clickID: "Main",
+			active: ""
 		}
 	},
 
 	// Whenever the button is clicked we'll use setState to add to the clickCounter
 	// Note the syntax for setting the state
 	handleClick: function(){
-		this.setState({clicks: 1 + this.state.clicks});
+		var active = this.state.active;
+		var newActive = active === 'Child' ? 'Child2' : "Child";
+		this.setState({
+			clicks: 1 + this.state.clicks,
+			active: "Child"
+		});
 	},
 
 	// Whenever the button is clicked we'll use setState to reset the clickCounter
 	// This will reset the clicks -- and it will be passed  ALL children
 	resetClick: function(){
-		this.setState({clicks: 0});
+		this.setState({
+			clicks: 0,
+			active: "Child2"
+		});
 	},
 
 	// On each click save the click count
@@ -63,7 +75,7 @@ var Parent = React.createClass({
 
 	// Here we render the function
 	render: function(){
-
+		var active = this.state.active;
 		return(
 
 			<div className="container">
@@ -74,10 +86,10 @@ var Parent = React.createClass({
 					<p><em>Now backed by the power of MongoDB!</em> Just visit <a href="/api">/api</a> to check out the DB!</p>
 					<p>
 						{/*Here we create a button click. Note how we have an onClick event associate with our handleClick function.*/}
-						<a className="btn btn-primary btn-lg" type="button" onClick={this.handleClick}>CLICK ME!!!!</a>
+						<a className="btn btn-primary btn-lg" type="button" onClick={this.handleClick}>Templates</a>
 						<span> </span>
 						{/*Here we create a button click for resetting the clickCounter*/}
-						<a className="btn btn-danger btn-lg" type="button" onClick={this.resetClick}>Reset</a>
+						<a className="btn btn-danger btn-lg" type="button" onClick={this.resetClick}>Contacts</a>
 					</p>
 				</div>
 
@@ -97,17 +109,23 @@ var Parent = React.createClass({
 									<div className="panel-body text-left">
 										<div className="panel">
 											<p>Updated 03/20/2017 12:55pm</p>
+											<div className="panel">
+											<ul className="nav nav-pills nav-stacked">
+												<li role="presentation" className="active"><a href="/child">Templates</a></li>
+												<li role="presentation" className="active"><a href="/child2">Contacts</a></li>
+											</ul>
+											</div>
 											<ol className="nav nav-pills nav-stacked">										
-												<li role="presentation" className="active"><a href="http://13.92.252.199:9090/HCRISWeb/login.jsp" target="_blank">Ontash HCRIS: Online HCRIS & marketing resources</a></li>
+												{/*<li role="presentation" className="active"><a href="http://13.92.252.199:9090/HCRISWeb/login.jsp" target="_blank">Ontash HCRIS: Online HCRIS & marketing resources</a></li>*/}
 												<li role="presentation" className="active"><a href="https://www.costreportdata.com/worksheet_formats.html" target="_blank">Cost Report Data: Online HCRIS & Worksheet Samples</a></li>
 												<li role="presentation" className="active"><a href="https://hcris.hfssoft.com/iFrame/Login/iLogin.aspx" target="_blank">HFS: Online Subscription HCRIS Database</a></li>
-												<li role="presentation" className="active"><a href="https://qualityreimburse.sugarondemand.com/index.php?action=Login&module=Users" target="_blank">Sugar CRM: Online Customer Relation Management Database</a></li>
-												<li role="presentation" className="active"><a href="https://www.mykplan.com/participantsecure_net/login.aspx" target="_blank">ADP 401K: QRS online ADP 401K account access.</a></li>
-												<li role="presentation" className="active"><a href="https://www.cbeyondonline.net/cbo/cbol/index.html" target="_blank">Cbeyond: QRS T1 internet & phone carrier online account access</a></li>
-												<li role="presentation" className="active"><a href="http://cp.fonality.com/" target="_blank">Fonality: QRS business phone system online user account access</a></li>
+												{/*<li role="presentation" className="active"><a href="https://qualityreimburse.sugarondemand.com/index.php?action=Login&module=Users" target="_blank">Sugar CRM: Online Customer Relation Management Database</a></li>*/}
+												{/*<li role="presentation" className="active"><a href="https://www.mykplan.com/participantsecure_net/login.aspx" target="_blank">ADP 401K: QRS online ADP 401K account access.</a></li>*/}
+												{/*<li role="presentation" className="active"><a href="https://www.cbeyondonline.net/cbo/cbol/index.html" target="_blank">Cbeyond: QRS T1 internet & phone carrier online account access</a></li>*/}
+												{/*<li role="presentation" className="active"><a href="http://cp.fonality.com/" target="_blank">Fonality: QRS business phone system online user account access</a></li>*/}
 												<li role="presentation" className="active"><a href="https://www.mykmbs.com/mykmbs/login.jspx" target="_blank">Konica Minolta: Copier online account access for supply and service order</a></li>
 												<li role="presentation" className="active"><a href="http://www.gotomeeting.com/" target="_blank">Gotomeeting: Conference call online access to join or to host a meeting</a></li>
-												<li role="presentation" className="active"><a href="http://secure.qualityreimbursement.com/" target="_blank">QRS Secure Website: Hosted online secure file sharing account access</a></li>
+												{/*<li role="presentation" className="active"><a href="http://secure.qualityreimbursement.com/" target="_blank">QRS Secure Website: Hosted online secure file sharing account access</a></li>*/}
 												<li role="presentation" className="active"><a href="http://www.qualityreimbursement.com/" target="_blank">QRS Home Page: QRS home page</a></li>
 												<li role="presentation" className="active"><a href="http://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/CostReports/index.html" target="_blank">HCRIS Published: CMS HCRIS quarterly publication</a></li>
 												<li role="presentation" className="active"><a href="http://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/dsh.html" target="_blank">SSI % Published: SSI % annual publication</a></li>
@@ -120,7 +138,7 @@ var Parent = React.createClass({
 												<li role="presentation" className="active"><a href="http://www.govdataservices.com/" target="_blank">GDS: Eligibility verification online account access</a></li>
 												<li role="presentation" className="active"><a href="https://www.ups.com/uis/create?loc=en_US&WT.svl=PNRO_L1" target="_blank">UPS: UPS Online Shipping</a></li>
 												<li role="presentation" className="active"><a href="http://www.fedex.com/us/" target="_blank">FEDEX: FEDEX Online Shipping</a></li>
-												<li role="presentation" className="active"><a href="https://smb.att.com/olam/loginAction.olamexecute" target="_blank">AT&T Uverse Small Business: Online Account Manager</a></li>
+												{/*<li role="presentation" className="active"><a href="https://smb.att.com/olam/loginAction.olamexecute" target="_blank">AT&T Uverse Small Business: Online Account Manager</a></li>*/}
 												<li role="presentation" className="active"><a href="https://login.luminate.com/login?.src=smbiz&.done=https%3A%2F%2Fwww.luminate.com%2Fservices%3F_ga%3D1.242949826.1137720605.1466816702%26authRedirect%3Dtrue&_ga=1.242949826.1137720605.1466816702" target="_blank">Aabaco: Aabaco Small Business Domain and Email</a></li>
 												<li role="presentation" className="active"><a href="https://www.microsoft.com/Licensing/servicecenter/default.aspx" target="_blank">Microsoft VLSC: Microsoft Volume Licensing Service Center</a></li>
 												<li role="presentation" className="active"><a href="https://www.medi-cal.ca.gov/Eligibility/Login.asp" target="_blank">Medi-Cal: DHCS Medi-Cal Eligibility Verification</a></li>
@@ -138,7 +156,12 @@ var Parent = React.createClass({
 					{/*This represents the "Parent"*/}
 					<div className="col-md-6">
 						{/*Here we'll deploy the child component. We'll pass it the parent's click counter as a "state"*/}
-						<Child clicks={this.state.clicks}/>
+						{/*<Child2 clicks={this.state.clicks}/>*/}
+						{active === 'Child' ? (
+                    		<Child clicks={this.state.clicks}/>
+                		) : active === 'Child2' ? (
+                    		<Child2 clicks={this.state.clicks}/>
+                		) : null}
 					</div>
 				</div>
 			</div>
