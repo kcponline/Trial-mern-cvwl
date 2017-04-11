@@ -19824,10 +19824,10 @@
 
 			return React.createElement(
 				'div',
-				{ className: 'container', style: { fonstStyle: 'times new roman' } },
+				{ className: 'container' },
 				React.createElement(
 					'div',
-					{ className: 'jumbotron', style: { background: 'skyblue' } },
+					{ className: 'jumbotron', style: { background: 'skyblue', color: 'white' } },
 					React.createElement(
 						'h3',
 						null,
@@ -19864,7 +19864,7 @@
 										{ className: 'panel-body text-left' },
 										React.createElement(
 											'div',
-											{ 'class': 'panel' },
+											{ className: 'panel' },
 											React.createElement(
 												'p',
 												null,

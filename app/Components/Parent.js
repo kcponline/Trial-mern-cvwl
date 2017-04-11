@@ -65,9 +65,9 @@ var Parent = React.createClass({
 	render: function(){
 
 		return(
-				<div className="container" style={{fonstStyle: 'times new roman'}}>
+				<div className="container">
 			
-					<div className="jumbotron" style={{background: 'skyblue'}}>
+					<div className="jumbotron" style={{background: 'skyblue',color: 'white'}}>
 						
 						<h3>COMMON VITAL WEBSITES AND LINKS</h3>
 						<hr/>
@@ -97,7 +97,7 @@ var Parent = React.createClass({
 						<div className="row">
 							<div className="col-md-6">
 								<div className="panel-body text-left">
-									<div class="panel">
+									<div className="panel">
 										<p>Updated 03/20/2017 12:55pm</p>
 										<ol class="nav nav-pills nav-stacked">
 											<li role="presentation" className="active"><a href="http://13.92.252.199:9090/HCRISWeb/login.jsp" target="_blank">Ontash HCRIS: Online HCRIS & marketing resources</a></li>
