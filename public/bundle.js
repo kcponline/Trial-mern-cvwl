@@ -19824,10 +19824,10 @@
 
 			return React.createElement(
 				'div',
-				{ className: 'container' },
+				{ className: 'container', style: { fonstStyle: 'times new roman' } },
 				React.createElement(
 					'div',
-					{ className: 'jumbotron' },
+					{ className: 'jumbotron', style: { background: 'skyblue' } },
 					React.createElement(
 						'h3',
 						null,
@@ -19858,7 +19858,7 @@
 								{ className: 'row' },
 								React.createElement(
 									'div',
-									{ className: 'col-md-12' },
+									{ className: 'col-md-6' },
 									React.createElement(
 										'div',
 										{ className: 'panel-body text-left' },
@@ -19875,7 +19875,7 @@
 												{ 'class': 'nav nav-pills nav-stacked' },
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://13.92.252.199:9090/HCRISWeb/login.jsp', target: '_blank' },
@@ -19884,7 +19884,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.costreportdata.com/worksheet_formats.html', target: '_blank' },
@@ -19893,7 +19893,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://hcris.hfssoft.com/iFrame/Login/iLogin.aspx', target: '_blank' },
@@ -19902,7 +19902,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://qualityreimburse.sugarondemand.com/index.php?action=Login&module=Users', target: '_blank' },
@@ -19911,7 +19911,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.mykplan.com/participantsecure_net/login.aspx', target: '_blank' },
@@ -19920,7 +19920,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.cbeyondonline.net/cbo/cbol/index.html', target: '_blank' },
@@ -19929,7 +19929,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://cp.fonality.com/', target: '_blank' },
@@ -19938,7 +19938,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.mykmbs.com/mykmbs/login.jspx', target: '_blank' },
@@ -19947,7 +19947,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.gotomeeting.com/', target: '_blank' },
@@ -19956,7 +19956,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://secure.qualityreimbursement.com/', target: '_blank' },
@@ -19965,7 +19965,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.qualityreimbursement.com/', target: '_blank' },
@@ -19974,7 +19974,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/CostReports/index.html', target: '_blank' },
@@ -19983,7 +19983,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/dsh.html', target: '_blank' },
@@ -19992,7 +19992,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.cms.gov/Research-Statistics-Data-and-Systems/Computer-Data-and-Systems/Privacy/DUA_-_DSH.html', target: '_blank' },
@@ -20001,7 +20001,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.ahd.com/', target: '_blank' },
@@ -20010,7 +20010,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://login.wolterskluwer.com/auth/?resume=/idp/GHoPx/resumeSAML20/idp/SSO.ping&PF_TargetResource=https%3A%2F%2Fintelliconnect.cch.com%3A443%2Fscion%2Fauth%2Fstep2&WK_CPID=WKUS-NA-IC&WK_Force_Login=STANDARD', target: '_blank' },
@@ -20019,7 +20019,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.regulations.gov/#!home', target: '_blank' },
@@ -20028,7 +20028,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.pacer.gov/', target: '_blank' },
@@ -20037,7 +20037,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://ra.emdeon.com/', target: '_blank' },
@@ -20046,7 +20046,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.govdataservices.com/', target: '_blank' },
@@ -20055,7 +20055,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.ups.com/uis/create?loc=en_US&WT.svl=PNRO_L1', target: '_blank' },
@@ -20064,7 +20064,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'http://www.fedex.com/us/', target: '_blank' },
@@ -20073,7 +20073,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://smb.att.com/olam/loginAction.olamexecute', target: '_blank' },
@@ -20082,7 +20082,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://login.luminate.com/login?.src=smbiz&.done=https%3A%2F%2Fwww.luminate.com%2Fservices%3F_ga%3D1.242949826.1137720605.1466816702%26authRedirect%3Dtrue&_ga=1.242949826.1137720605.1466816702', target: '_blank' },
@@ -20091,7 +20091,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.microsoft.com/Licensing/servicecenter/default.aspx', target: '_blank' },
@@ -20100,7 +20100,7 @@
 												),
 												React.createElement(
 													'li',
-													{ role: 'presentation', 'class': 'active' },
+													{ role: 'presentation', className: 'active' },
 													React.createElement(
 														'a',
 														{ href: 'https://www.medi-cal.ca.gov/Eligibility/Login.asp', target: '_blank' },
@@ -20170,7 +20170,7 @@
 					{ className: 'panel-body text-left' },
 					React.createElement(
 						'div',
-						{ 'class': 'panel' },
+						{ className: 'panel' },
 						React.createElement(
 							'p',
 							null,

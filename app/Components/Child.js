@@ -23,7 +23,7 @@ var Child = React.createClass({
 					<h3 className="panel-title text-center">Templates</h3>
 				</div>
 				<div className="panel-body text-left">
-					<div class="panel">
+					<div className="panel">
 						<p>Updated 03/20/2017 1:19pm</p>
 						<ol class="nav nav-pills nav-stacked">
 							<li role="presentation" class="active"><a href="#" target="_blank">Proposal</a></li>
