@@ -19878,15 +19878,6 @@
 													{ role: 'presentation', 'class': 'active' },
 													React.createElement(
 														'a',
-														{ href: 'http://13.92.252.199:9090/HCRISWeb/login.jsp', target: '_blank' },
-														'Ontash HCRIS: Online HCRIS & marketing resources'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
 														{ href: 'https://www.costreportdata.com/worksheet_formats.html', target: '_blank' },
 														'Cost Report Data: Online HCRIS & Worksheet Samples'
 													)
@@ -19898,69 +19889,6 @@
 														'a',
 														{ href: 'https://hcris.hfssoft.com/iFrame/Login/iLogin.aspx', target: '_blank' },
 														'HFS: Online Subscription HCRIS Database'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
-														{ href: 'https://qualityreimburse.sugarondemand.com/index.php?action=Login&module=Users', target: '_blank' },
-														'Sugar CRM: Online Customer Relation Management Database'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
-														{ href: 'https://www.mykplan.com/participantsecure_net/login.aspx', target: '_blank' },
-														'ADP 401K: QRS online ADP 401K account access.'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
-														{ href: 'https://www.cbeyondonline.net/cbo/cbol/index.html', target: '_blank' },
-														'Cbeyond: QRS T1 internet & phone carrier online account access'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
-														{ href: 'http://cp.fonality.com/', target: '_blank' },
-														'Fonality: QRS business phone system online user account access'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
-														{ href: 'https://www.mykmbs.com/mykmbs/login.jspx', target: '_blank' },
-														'Konica Minolta: Copier online account access for supply and service order'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
-														{ href: 'http://www.gotomeeting.com/', target: '_blank' },
-														'Gotomeeting: Conference call online access to join or to host a meeting'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
-														{ href: 'http://secure.qualityreimbursement.com/', target: '_blank' },
-														'QRS Secure Website: Hosted online secure file sharing account access'
 													)
 												),
 												React.createElement(
@@ -20040,24 +19968,6 @@
 													{ role: 'presentation', 'class': 'active' },
 													React.createElement(
 														'a',
-														{ href: 'http://ra.emdeon.com/', target: '_blank' },
-														'Emdeon: Eligibility verification online account access'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
-														{ href: 'http://www.govdataservices.com/', target: '_blank' },
-														'GDS: Eligibility verification online account access'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
 														{ href: 'https://www.ups.com/uis/create?loc=en_US&WT.svl=PNRO_L1', target: '_blank' },
 														'UPS: UPS Online Shipping'
 													)
@@ -20069,24 +19979,6 @@
 														'a',
 														{ href: 'http://www.fedex.com/us/', target: '_blank' },
 														'FEDEX: FEDEX Online Shipping'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
-														{ href: 'https://smb.att.com/olam/loginAction.olamexecute', target: '_blank' },
-														'AT&T Uverse Small Business: Online Account Manager'
-													)
-												),
-												React.createElement(
-													'li',
-													{ role: 'presentation', 'class': 'active' },
-													React.createElement(
-														'a',
-														{ href: 'https://login.luminate.com/login?.src=smbiz&.done=https%3A%2F%2Fwww.luminate.com%2Fservices%3F_ga%3D1.242949826.1137720605.1466816702%26authRedirect%3Dtrue&_ga=1.242949826.1137720605.1466816702', target: '_blank' },
-														'Aabaco: Aabaco Small Business Domain and Email'
 													)
 												),
 												React.createElement(
