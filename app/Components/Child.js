@@ -19,20 +19,20 @@ var Child = React.createClass({
 		return(
 
 			<div className="panel panel-default">
-				<div className="panel-heading">
-					<h3 className="panel-title text-center">Templates</h3>
+				<div className="panel-heading" style={{background: 'skyblue',color: 'white'}}>
+					<h3 className="panel-title text-center" style={{fontSize: '20px'}}><b>Templates</b></h3>
 				</div>
-				<div className="panel-body text-left">
-					<div className="panel">
-						<p>Updated 03/20/2017 1:19pm</p>
-						<ol class="nav nav-pills nav-stacked">
-							<li role="presentation" class="active"><a href="#" target="_blank">Proposal</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank">Model Forms</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank">DUA</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank">Position Paper</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank">DSH Calculator</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank">Jurisdiction Brief</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank">Recalculation Request</a></li>
+				<div className="panel-body text-left" style={{background: 'skyblue'}}>
+					<div className="panel" style={{background: 'skyblue'}}>
+						<p  style={{color: 'white'}}>Updated 03/20/2017 1:19pm</p>
+						<ol class="nav nav-pills nav-stacked" style={{color: 'white',fontSize: '18px'}}>
+							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Proposal</a></li>
+							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Model Forms</a></li>
+							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>DUA</a></li>
+							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Position Paper</a></li>
+							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>DSH Calculator</a></li>
+							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Jurisdiction Brief</a></li>
+							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Recalculation Request</a></li>
 						</ol>
 					</div>
 					{/* The child will reference the parent's click counter as a "prop".
