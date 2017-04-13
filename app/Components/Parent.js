@@ -67,10 +67,11 @@ var Parent = React.createClass({
 		return(
 				<div className="container" style={{width: '100%',padding: '0px',fontType: 'Serif'}}>
 			
-					<div className="jumbotron" style={{background: 'skyblue',color: 'white',borderRadius: '0px'}}>
+					<div className="jumbotron" style={{background: 'steelblue',color: 'white',borderRadius: '0px'}}>
 						
 						<h3 style={{fontSize: '50px'}}><b>COMMON VITAL WEBSITES AND LINKS</b></h3>
 						<hr/>
+						<p style={{fontSize: '15px'}}>CVWL Trial MERN 1-mk</p>
 						{/*<p><em>Now backed by the power of MongoDB!</em> Just visit <a href="/api">/api</a> to check out the DB!</p>*/}
 						{/*<p>*/}
 							{/*Here we create a button click. Note how we have an onClick event associate with our handleClick function.*/}
@@ -96,8 +97,8 @@ var Parent = React.createClass({
 
 						<div className="row">
 							<div className="col-md-12">
-								<div className="panel-body text-left" style={{color: 'white',background: 'skyblue'}}>
-									<div className="panel" style={{color: 'white',background: 'skyblue'}}>
+								<div className="panel-body text-left" style={{color: 'white',background: 'steelblue'}}>
+									<div className="panel" style={{color: 'white',background: 'steelblue'}}>
 										<p  style={{color: 'white'}}>Updated 03/20/2017 12:55pm</p>
 										<ol class="nav nav-pills nav-stacked"  style={{color: 'white',fontSize: '18px'}}>
 											<li role="presentation" className="active"><a href="https://www.costreportdata.com/worksheet_formats.html" target="_blank" style={{color: '#e6f5ff'}}>Cost Report Data: Online HCRIS & Worksheet Samples</a></li>

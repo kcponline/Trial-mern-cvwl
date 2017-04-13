@@ -43,7 +43,7 @@ var Child = React.createClass({
 					{/*It will then pass in both those numbers to its own child "grandchild
 					   Note there is a better way to do this via didReceiveProps... but we'll get to that later.
 					*/}
-					{/*<GrandChild number={this.state.number + 2*this.props.clicks}/>*/}
+					<GrandChild />
 
 				</div>
 			</div>
