@@ -24,18 +24,18 @@ var GrandChild = React.createClass({
 					<p>Updated 03/20/2017 1:19pm</p>
 					<ol className="nav nav-pills nav-stacked">
 						<li role="presentation" className="active">
-							<a href="./" download="PT 1.06.accdb">
-								PT (aka HCRIS or Project Tracking)
+							<a href="http://localhost:3000/databases/PT 1.06.accdb" target="_blank">
+								PT (aka HCRIS or Project Tracking) version 1.06
 							</a>
 						</li>
 						<li role="presentation" className="active">
-							<a href="./" download="philip.accdb">
+							<a href="http://localhost:3000/databases/philip.accdb" target="_blank">
 								PHILIP (fka Tracking or Philip's Tracking Database)
 							</a>
 						</li>
 						<li role="presentation" className="active">
-							<a href="./" download="SSI 1.01.accdb">
-								SSI Chart (graph database)
+							<a href="http://localhost:3000/databases/SSI 1.01.accdb" target="_blank">
+								SSI Chart (graph database) version 1.01
 							</a>
 						</li>
 					</ol>
