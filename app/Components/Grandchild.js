@@ -24,7 +24,7 @@ var GrandChild = React.createClass({
 					<p>Updated 03/20/2017 1:19pm</p>
 					<ol className="nav nav-pills nav-stacked">
 						<li role="presentation" className="active">
-							<a href="http://localhost:3000/databases/PT 1.06.accdb" target="_blank">
+							<a href="192.168.7.27:3000/databases/PT 1.06.accdb" target="_blank">
 								PT (aka HCRIS or Project Tracking) version 1.06
 							</a>
 						</li>
@@ -34,7 +34,7 @@ var GrandChild = React.createClass({
 							</a>
 						</li>
 						<li role="presentation" className="active">
-							<a href="http://localhost:3000/databases/SSI 1.01.accdb" target="_blank">
+							<a href="192.168.7.27:3000/databases/SSI 1.01.accdb" target="_blank">
 								SSI Chart (graph database) version 1.01
 							</a>
 						</li>
