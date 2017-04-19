@@ -2,7 +2,7 @@
 var React = require('react');
 
 // Here we include all of the sub-components
-// var GrandChild = require('./GrandChild');
+var GrandChild2 = require('./GrandChild2');
 
 // Create the Child Component
 var Child2 = React.createClass({
@@ -39,7 +39,7 @@ var Child2 = React.createClass({
 					{/*It will then pass in both those numbers to its own child "grandchild
 					   Note there is a better way to do this via didReceiveProps... but we'll get to that later.
 					*/}
-					{/*<GrandChild number={this.state.number + 2*this.props.clicks}/>*/}
+					<GrandChild2 number={this.state.number + 2*this.props.clicks}/>
 
 				</div>
 			</div>
