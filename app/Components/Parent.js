@@ -26,10 +26,10 @@ var Parent = React.createClass({
 	// Note the syntax for setting the state
 	handleClick: function(){
 		var active = this.state.active;
-		var newActive = active === 'Child' ? 'Child2' : "Child";
+		// var newActive = active === 'Child' ? 'Child2' : "Child";
 		this.setState({
 			clicks: 1 + this.state.clicks,
-			active: "Child"
+			active: "1"
 		});
 	},
 
@@ -38,7 +38,7 @@ var Parent = React.createClass({
 	resetClick: function(){
 		this.setState({
 			clicks: 0,
-			active: "Child2"
+			active: "2"
 		});
 	},
 
@@ -145,9 +145,9 @@ var Parent = React.createClass({
 					<div className="col-md-6">
 						{/*Here we'll deploy the child component. We'll pass it the parent's click counter as a "state"*/}
 						{/*<Child2 clicks={this.state.clicks}/>*/}
-						{active === 'Child' ? (
+						{active === '1' ? (
                     		<Child clicks={this.state.clicks}/>
-                		) : active === 'Child2' ? (
+                		) : active === '2' ? (
                     		<Child2 clicks={this.state.clicks}/>
                 		) : null}
 					</div>
