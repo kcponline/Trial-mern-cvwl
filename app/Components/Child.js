@@ -20,10 +20,10 @@ var Child = React.createClass({
 
 			<div className="panel panel-default">
 				<div className="panel-heading" style={{background: 'skyblue',color: 'white'}}>
-					<h3 className="panel-title text-center" style={{fontSize: '20px'}}><b>Templates</b></h3>
+					<h3 className="panel-title text-center" style={{fontSize: '20px'}}><b>Templates - Concept Only</b></h3>
 				</div>
-				<div className="panel-body text-left" style={{background: 'skyblue'}}>
-					<div className="panel" style={{background: 'skyblue'}}>
+				<div className="panel-body text-left" style={{background: 'pink'}}>
+					<div className="panel" style={{background: 'pink'}}>
 						<p  style={{color: 'white'}}>Updated 03/20/2017 1:19pm</p>
 						<ol class="nav nav-pills nav-stacked" style={{color: 'white',fontSize: '18px'}}>
 							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Proposal</a></li>
