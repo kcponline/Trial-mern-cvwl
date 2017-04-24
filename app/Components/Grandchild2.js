@@ -2,7 +2,7 @@
 var React = require('react');
 
 // Create the GrandChild Component
-var GrandChild = React.createClass({
+var GrandChild2 = React.createClass({
 
 	// GrandChild has a state that follows the number of clicks
 	getInitialState: function(){
@@ -17,7 +17,7 @@ var GrandChild = React.createClass({
 		return(
 
 			<div className="panel panel-default">
-				<div className="panel-heading">
+				<div className="panel-heading" style={{background: 'pink'}}>
 					<h3 className="panel-title text-center">Databases</h3>
 				</div>
 				<div className="panel-body text-left">
@@ -51,4 +51,4 @@ var GrandChild = React.createClass({
 });
 
 // Export the component back for use in other files
-module.exports = GrandChild;
+module.exports = GrandChild2;
