@@ -18,7 +18,7 @@ var GrandChild2 = React.createClass({
 
 			<div className="panel panel-default">
 				<div className="panel-heading" style={{background: 'pink'}}>
-					<h3 className="panel-title text-center">Databases</h3>
+					<h3 className="panel-title text-center">Databases Route</h3>
 				</div>
 				<div className="panel-body text-left">
 					<p>Updated 03/20/2017 1:19pm</p>

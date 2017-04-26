@@ -86,14 +86,8 @@ app.post('/api/', function(req, res){
 
 });
 
-// Main Route. This route will redirect to our rendered React application
-app.get('/child', function(req, res){
-  res.sendFile('./Components/Child.js');
-})
-
-// Main Route. This route will redirect to our rendered React application
-app.get('/child2', function(req, res){
-  res.sendFile('./Components/Child2.js');
+app.get('/1', function(req, res){
+  res.sendFile('./public/databases/philip.accdb');
 })
 
 // -------------------------------------------------

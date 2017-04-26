@@ -7,6 +7,9 @@ var Child = require('./Child');
 // Here we include all of the sub-components
 var Child2 = require('./Child2');
 
+// Here we include all of the sub-components
+var Child3 = require('./Child3');
+
 // Here we will utilize the axios library to perform GET/POST requests
 var axios = require('axios');
 
@@ -80,8 +83,8 @@ var Parent = React.createClass({
 
 			<div className="container">
 
-				<div className="jumbotron" style={{background: 'lightblue'}}>
-					<h3 style={{fontSize: '50px'}}>COMMON VITAL WEBSITES AND LINKS</h3>
+				<div className="jumbotron" style={{padding: '20px', background: 'lightblue'}}>
+					<h3 style={{fontSize: '30px'}}>COMMON VITAL WEBSITES AND LINKS 1-kp-2</h3>
 					<hr/>
 					<p><em>Now backed by the power of MongoDB!</em> Just visit <a href="/api">/api</a> to check out the DB!</p>
 					<p>
@@ -150,12 +153,15 @@ var Parent = React.createClass({
                 		) : active === '2' ? (
                     		<Child2 clicks={this.state.clicks}/>
                 		) : null}
+                		<Child3 />
+
 					</div>
 				</div>
 			</div>
 		)
 	}
 });
+
 
 // Export the component back for use in other files
 module.exports = Parent;
