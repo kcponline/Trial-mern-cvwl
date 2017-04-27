@@ -184,10 +184,10 @@ var Parent = React.createClass({
 									<div className="panel" style={{color: 'white',background: 'steelblue'}}>
 										<p  style={{color: 'white'}}>Updated 03/20/2017 12:55pm</p>
 											<div className="panel">
-												<ul className="nav nav-pills nav-stacked">
+												{/*<ul className="nav nav-pills nav-stacked">
 													<li role="presentation" className="active"><a href="/child">Templates</a></li>
 													<li role="presentation" className="active"><a href="/child2">Contacts</a></li>
-												</ul>
+												</ul>*/}
 											</div>
 											<ol class="nav nav-pills nav-stacked"  style={{color: 'white',fontSize: '18px'}}>
 												<li role="presentation" className="active"><a href="http://13.92.252.199:9090/HCRISWeb/login.jsp" target="_blank" style={{color: '#e6f5ff'}}>Ontash HCRIS: Online HCRIS & marketing resources</a></li>
