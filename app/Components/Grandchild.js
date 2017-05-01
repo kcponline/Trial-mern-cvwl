@@ -41,7 +41,7 @@ var GrandChild = React.createClass({
 					</ol>
 					{/* Grandchild will use it's own parents number 
 					("child") with its own state.*/}
-					<h1>{this.state.number + 4*this.props.number}</h1>
+					{/*<h1>{this.state.number + 4*this.props.number}</h1>*/}
 				</div>
 			</div>
 		

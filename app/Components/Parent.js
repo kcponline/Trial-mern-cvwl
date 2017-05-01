@@ -232,7 +232,7 @@ var Parent = React.createClass({
 					{/*This represents the "Parent"*/}
 					<div className="col-md-4" style={{marginRight: '0px'}}>
 						{/*Here we'll deploy the child component. We'll pass it the parent's click counter as a "state"*/}
-						{/*<Child clicks={this.state.clicks}/>*/}
+						<Child clicks={this.state.clicks}/>
 					</div>
 
 				</div>
