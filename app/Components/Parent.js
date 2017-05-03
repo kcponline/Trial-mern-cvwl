@@ -145,7 +145,7 @@ var Parent = React.createClass({
 
 	// Here we render the function
 	render: function(){
-
+		var active = this.state.active;
 		return(
 				<div className="container" style={{width: '100%',padding: '0px',fontType: 'Serif'}}>
 			
