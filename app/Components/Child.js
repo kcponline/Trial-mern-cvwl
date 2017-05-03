@@ -19,11 +19,11 @@ var Child = React.createClass({
 		return(
 
 			<div className="panel panel-default">
-				<div className="panel-heading" style={{background: 'skyblue',color: 'white'}}>
+				<div className="panel-heading" style={{color: 'white',background: 'skyblue'}}>
 					<h3 className="panel-title text-center" style={{fontSize: '20px'}}><b>Templates - Concept Only</b></h3>
 				</div>
-				<div className="panel-body text-left" style={{background: 'pink'}}>
-					<div className="panel" style={{background: 'pink'}}>
+				<div className="panel-body text-left" style={{color: 'white',background: 'steelblue'}}>
+					<div className="panel" style={{color: 'white',background: 'steelblue'}}>
 						<p  style={{color: 'white'}}>Updated 03/20/2017 1:19pm</p>
 						<ol class="nav nav-pills nav-stacked" style={{color: 'white',fontSize: '18px'}}>
 							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Proposal</a></li>
@@ -43,7 +43,6 @@ var Child = React.createClass({
 					{/*It will then pass in both those numbers to its own child "grandchild
 					   Note there is a better way to do this via didReceiveProps... but we'll get to that later.
 					*/}
-					<GrandChild />
 
 				</div>
 			</div>

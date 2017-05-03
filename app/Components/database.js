@@ -2,7 +2,7 @@
 var React = require('react');
 
 // Create the GrandChild Component
-var GrandChild2 = React.createClass({
+var Database = React.createClass({
 
 	// GrandChild has a state that follows the number of clicks
 	getInitialState: function(){
@@ -50,4 +50,4 @@ var GrandChild2 = React.createClass({
 });
 
 // Export the component back for use in other files
-module.exports = GrandChild2;
+module.exports = Database;
