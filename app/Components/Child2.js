@@ -19,8 +19,8 @@ var Child2 = React.createClass({
 		return(
 
 			<div className="panel panel-default">
-				<div className="panel-heading">
-					<h3 className="panel-title text-center">Contacts</h3>
+				<div className="panel-heading" style={{color: 'white',background: 'skyblue'}}>
+					<h3 className="panel-title text-center" style={{fontSize: '20px'}}><b>Contacts</b></h3>
 				</div>
 				<div className="panel-body text-left">
 					<div className="panel">

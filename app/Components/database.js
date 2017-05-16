@@ -17,8 +17,8 @@ var Database = React.createClass({
 		return(
 
 			<div className="panel panel-default">
-				<div className="panel-heading" style={{background: 'pink'}}>
-					<h3 className="panel-title text-center">Databases</h3>
+				<div className="panel-heading" style={{color: 'white',background: 'skyblue'}}>
+					<h3 className="panel-title text-center" style={{fontSize: '20px'}}><b>Databases</b></h3>
 				</div>
 				<div className="panel-body text-left">
 					<p>Updated 03/20/2017 1:19pm</p>
