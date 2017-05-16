@@ -46,6 +46,11 @@ app.get('/', function(req, res){
   res.sendFile('./public/index.html');
 })
 
+// Main Route. This route will redirect to our rendered React application
+app.get('/index2', function(req, res){
+  res.sendFile('./public/index2.html');
+})
+
 // This is the route we will send GET requests to retrieve our most recent click data.
 // We will call this route the moment our page gets rendered
 app.get('/api/', function(req, res) {
@@ -86,15 +91,33 @@ app.post('/api/', function(req, res){
 
 });
 
-// Main Route. This route will redirect to our rendered React application
-app.get('/child', function(req, res){
-  res.sendFile('./Components/Child.js');
-})
+// We handle posts to our mongodb database here
+app.post('/submit', function(req, res) {
 
-// Main Route. This route will redirect to our rendered React application
-app.get('/child2', function(req, res){
-  res.sendFile('./Components/Child2.js');
-})
+  // Inserting an array and a boolean into the req.body object for example purposes
+  req.body.array = ["item1", "item2", "item3"];
+  // remember, we have to specify booleans on the server--the front-end can only send strings
+  req.body.boolean = false;
+
+  // We use the "Example" class we defined above 
+  // to check our req.body against our Example model.
+  var content = new Example(req.body);
+
+  // with the new Example object created, we can save our data to mongoose.
+  // notice the different syntax. The magic happens in exampleModel.js
+  content.save(function(err, doc) {
+    // send any errors to the browser
+    if (err) {
+      res.send(err);
+    } 
+    // otherwise, send the new doc to the browser
+    else {
+      res.send(doc);
+    }
+  });
+});
+
+
 
 // -------------------------------------------------
 

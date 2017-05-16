@@ -31,7 +31,7 @@ var VitalWebsites = React.createClass({
 												<li role="presentation" className="active"><a href="/child2">Contacts</a></li>
 											</ul>*/}
 											</div>
-												<ol class="nav nav-pills nav-stacked"  style={{color: 'white',fontSize: '18px'}}>
+												<ol className="nav nav-pills nav-stacked"  style={{color: 'white',fontSize: '18px'}}>
 													<li role="presentation" className="active"><a href="http://13.92.252.199:9090/HCRISWeb/login.jsp" target="_blank" style={{color: '#e6f5ff'}}>Ontash HCRIS: Online HCRIS & marketing resources</a></li>
 													<li role="presentation" className="active"><a href="https://www.costreportdata.com/worksheet_formats.html" target="_blank" style={{color: '#e6f5ff'}}>Cost Report Data: Online HCRIS & Worksheet Samples</a></li>
 													<li role="presentation" className="active"><a href="https://hcris.hfssoft.com/iFrame/Login/iLogin.aspx" target="_blank" style={{color: '#e6f5ff'}}>HFS: Online Subscription HCRIS Database</a></li>

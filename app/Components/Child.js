@@ -25,14 +25,14 @@ var Child = React.createClass({
 				<div className="panel-body text-left" style={{color: 'white',background: 'steelblue'}}>
 					<div className="panel" style={{color: 'white',background: 'steelblue'}}>
 						<p  style={{color: 'white'}}>Updated 03/20/2017 1:19pm</p>
-						<ol class="nav nav-pills nav-stacked" style={{color: 'white',fontSize: '18px'}}>
-							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Proposal</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Model Forms</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>DUA</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Position Paper</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>DSH Calculator</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Jurisdiction Brief</a></li>
-							<li role="presentation" class="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Recalculation Request</a></li>
+						<ol className="nav nav-pills nav-stacked" style={{color: 'white',fontSize: '18px'}}>
+							<li role="presentation" className="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Proposal</a></li>
+							<li role="presentation" className="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Model Forms</a></li>
+							<li role="presentation" className="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>DUA</a></li>
+							<li role="presentation" className="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Position Paper</a></li>
+							<li role="presentation" className="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>DSH Calculator</a></li>
+							<li role="presentation" className="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Jurisdiction Brief</a></li>
+							<li role="presentation" className="active"><a href="#" target="_blank" style={{color: '#e6f5ff'}}>Recalculation Request</a></li>
 						</ol>
 					</div>
 					{/* The child will reference the parent's click counter as a "prop".
