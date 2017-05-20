@@ -38,7 +38,7 @@ db.once('open', function () {
   console.log('Mongoose connection successful.');
 });
 
-
+var Example = require('./exampleModel.js')
 // -------------------------------------------------
 
 // Main Route. This route will redirect to our rendered React application

@@ -34,12 +34,6 @@ var Form = React.createClass({
 
 				<div className="row">
 
-					<div className="jumbotron">
-						<h2>Form Capture</h2>
-						<p><em>Type numbers and text in the appropriate boxes.</em></p>
-					</div>
-
-
 					<div className="col-md-6">
 				
 						<div className="panel panel-default">
