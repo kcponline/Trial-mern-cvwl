@@ -11,6 +11,10 @@ var Click = require('./models/click.js');
 var app = express();
 var PORT = process.env.PORT || 3000; // Sets an initial port. We'll use this later in our listener
 
+//Scraping tools
+var request = require('request'); 
+var cheerio = require('cheerio');
+
 // Run Morgan for Logging
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -23,7 +27,7 @@ app.use(express.static('./public'));
 // -------------------------------------------------
 
 // MongoDB Configuration configuration (Change this URL to your own DB)
-mongoose.connect('mongodb://localhost');
+mongoose.connect('mongodb://localhost/Phones');
 // mongoose.connect('mongodb://admin:codingrocks@ds023674.mlab.com:23674/heroku_5ql1blnl');
 // mongoose.connect('mongodb://kcponlinetcbc:pa55w0rd@ds111748.mlab.com:11748/heroku_swngn3v4');
 // mongoose.connect('mongodb://heroku_swngn3v4:78qdg5fdbsp3cnf4hu738jl1o7@ds111748.mlab.com:11748/heroku_swngn3v4');
@@ -87,12 +91,12 @@ app.post('/api/', function(req, res){
 });
 
 // Main Route. This route will redirect to our rendered React application
-app.get('/child', function(req, res){
+app.get('/templates', function(req, res){
   res.sendFile('./Components/Child.js');
 })
 
 // Main Route. This route will redirect to our rendered React application
-app.get('/child2', function(req, res){
+app.get('/contacts', function(req, res){
   res.sendFile('./Components/Child2.js');
 })
 

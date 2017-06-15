@@ -119,6 +119,9 @@ var Parent = React.createClass({
 							<span> </span>
 							<a className="btn btn-danger btn-lg" type="button" onClick={this.allClick}>Show All</a>
 							<span> </span>
+							{/*Trial*/}
+							{/*<a className="btn btn-danger btn-lg" type="button" onClick={this.phoneClick}>Phone Numbers</a>
+							<span> </span>*/}
 							{/*Here we create a button click for resetting the clickCounter*/}
 							{/*<a className="btn btn-danger btn-lg" type="button" onClick={this.resetClick}>Contacts</a>*/}
 						</p>
@@ -165,21 +168,25 @@ var Parent = React.createClass({
                 			<div className="col-md-12">
                 				<Database/>
                 			</div>
-                		) : active ==='5' ? (
-                		<div>
-                			<div className="col-md-8">
-                				<VitalWebsites/>
+                		) : active === '5' ? (
+	                		<div>
+	                			<div className="col-md-8">
+	                				<VitalWebsites/>
+	                			</div>
+	                			<div className="col-md-4">
+	                				<Child/>
+	                			</div>
+	                			<div className="col-md-4">
+	                				<Child2/>
+	                			</div>
+	                			<div className="col-md-4">
+	                				<Database/>
+	                			</div>
                 			</div>
-                			<div className="col-md-4">
-                				<Child/>
+                		) : active === '6' ? (
+                			<div className="col-md-12">
+                				<Phones/>
                 			</div>
-                			<div className="col-md-4">
-                				<Child2/>
-                			</div>
-                			<div className="col-md-4">
-                				<Database/>
-                			</div>
-                		</div>
                 		) : null}
 
 					
