@@ -183,10 +183,7 @@ var Parent = React.createClass({
 	                				<Database/>
 	                			</div>
                 			</div>
-                		) : active === '6' ? (
-                			<div className="col-md-12">
-                				<Phones/>
-                			</div>
+                		
                 		) : null}
 
 					
