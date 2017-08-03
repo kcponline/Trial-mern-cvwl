@@ -88,6 +88,40 @@ var Form = React.createClass({
 
 					</div>
 
+					<div className="col-md-12">
+				
+						<div className="panel panel-default">
+							<div className="panel-heading">
+								<h3 className="panel-title text-center">Form</h3>
+							</div>
+							<div className="panel-body text-center">
+
+									<form>
+										<div className="form-group">
+											<h4 className=""><strong>Number 1</strong></h4>
+
+											{/*Note how each of the form elements has an id that matches the state. This is not necessary but it is convenient.
+												Also note how each has an onChange event associated with our handleChange event. 
+											*/}
+											<input type="number" value={this.state.value} className="form-control " id="num1" onChange= {this.handleChange} required/>
+
+											<h4 className=""><strong>Number 2</strong></h4>
+											<input type="number" value={this.state.value} className="form-control " id="num2" onChange= {this.handleChange} required/>
+
+											<h4 className=""><strong>Random Text</strong></h4>
+											<input type="text" value={this.state.value} className="form-control " id="text" onChange= {this.handleChange} required/>
+
+										</div>
+											{/*Here we create a button click. Note how we have an onClick event associate with our handleClick function.*/}
+											<a className="btn btn-primary btn-lg" type="button" onClick={this.handleClick}>Submit</a>
+
+									</form>
+
+							</div>
+						</div>
+
+					</div>
+
 				</div>
 
 			</div>
