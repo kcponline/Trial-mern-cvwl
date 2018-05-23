@@ -74,6 +74,8 @@ var VitalWebsites = require('./VitalWebsites');
 
 var Database = require('./Database');
 
+var PhoneNum = require('./PhoneNum');
+
 // Here we will utilize the axios library to perform GET/POST requests
 var axios = require('axios');
 
@@ -121,10 +123,17 @@ var Parent = React.createClass({
 		});
 	},
 
+	phoneClick: function(){
+		this.setState({
+			clicks:0,
+			active: "5"
+		});
+	},
+
 	allClick: function(){
 		this.setState({
 			clicks: 0,
-			active: "5"
+			active: "6"
 		});
 	},
 
@@ -180,12 +189,14 @@ var Parent = React.createClass({
 							<span> </span>
 							<a className="btn btn-danger btn-lg" type="button" onClick={this.dataClick}>Databases</a>
 							<span> </span>
+							<a className="btn btn-danger btn-lg" type="button" onClick={this.phoneClick}>Contacts</a>
+							<span> </span>
 							<a className="btn btn-danger btn-lg" type="button" onClick={this.allClick}>Show All</a>
 							<span> </span>
 							{/*Here we create a button click for resetting the clickCounter*/}
 							{/*<a className="btn btn-danger btn-lg" type="button" onClick={this.resetClick}>Contacts</a>*/}
 						</p>
-						<p style={{fontSize: '15px'}}>CVWL Trial MERN 1-mk-1</p>
+						<p style={{fontSize: '15px'}}>CVWL Trial MERN 1-mk-3.5</p>
 						{/*<p><em>Now backed by the power of MongoDB!</em> Just visit <a href="/api">/api</a> to check out the DB!</p>*/}
 						{/*<p>*/}
 							{/*Here we create a button click. Note how we have an onClick event associate with our handleClick function.*/}
@@ -228,7 +239,11 @@ var Parent = React.createClass({
                 			<div className="col-md-12">
                 				<Database/>
                 			</div>
-                		) : active ==='5' ? (
+                		) : active === '5' ? (
+                			<div className="col-md-12">
+                				<PhoneNum/>
+                			</div>
+                		) : active === '6' ? (
                 		<div>
                 			<div className="col-md-8">
                 				<VitalWebsites/>
