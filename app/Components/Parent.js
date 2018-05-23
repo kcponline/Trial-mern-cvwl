@@ -196,7 +196,7 @@ var Parent = React.createClass({
 							{/*Here we create a button click for resetting the clickCounter*/}
 							{/*<a className="btn btn-danger btn-lg" type="button" onClick={this.resetClick}>Contacts</a>*/}
 						</p>
-						<p style={{fontSize: '15px'}}>CVWL Trial MERN 1-mk-3.5</p>
+						<p style={{fontSize: '15px'}}>CVWL Trial MERN 1-mk-3.1</p>
 						{/*<p><em>Now backed by the power of MongoDB!</em> Just visit <a href="/api">/api</a> to check out the DB!</p>*/}
 						{/*<p>*/}
 							{/*Here we create a button click. Note how we have an onClick event associate with our handleClick function.*/}
